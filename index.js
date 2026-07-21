@@ -57,3 +57,22 @@ console.log('In Stock Products:', inStockProducts);
 
 const inStockProductNames = inStockProducts.map(product => product.name.toUpperCase());
 console.log('In Stock Product Names:', inStockProductNames);
+
+products.push({
+    name: 'Product 11',
+    price: 10.99,
+    inStock: true
+});
+console.log('Array After Push:', products);
+
+products.pop();
+products.pop();
+console.log('Array After Pop:', products);
+
+const slicedProducts = products.slice(2, 5);
+console.log('Sliced Products:', slicedProducts);
+
+const splicedProducts = products.splice(2, 4);
+console.log('Spliced Products:', splicedProducts);
+
+console.log('Final Products Array:', products);
